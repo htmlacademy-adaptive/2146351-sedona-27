@@ -1,3 +1,9 @@
+.page__body {
+  font-family: "PT Sans", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .block-title {
   padding: 0;
   margin: 0;
@@ -17,13 +23,6 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.block-amount {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  padding-left: 14px;
 }
 
 .visually-hidden {
