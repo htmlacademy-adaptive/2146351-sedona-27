@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="sass/style.scss" />
@@ -47,8 +48,9 @@
     </div>
 
     <section class="present">
-      <h2 class="present__title">Представьтесь:</h2>
+
           <form class="present__form form" action="#" method="get">
+            <h2 class="form__title ">Представьтесь:</h2>
               <label class="form__label">Имя*:</label>
               <input class="form__input" type="text" name="name"
                 placeholder="Введите имя">
@@ -58,7 +60,7 @@
               <label class="form__label">Отчество:</label>
               <input class="form__input" type="text" name="patronymic"
                 placeholder="Введите отчество">
-          <h2 class="present__title">Контактная информация:</h2>
+          <h2 class="form__title">Контактная информация:</h2>
               <label class="form__label">Контактный телефон*:</label>
               <input class="form__input form__input--phone" type="tel" name="phone"
                 placeholder="Введите телефон">
@@ -66,58 +68,58 @@
               <input class="form__input form__input--mail" type="email" name="email"
               placeholder="Введите e-mail">
 
-    <div class="present-radio">
-        <fieldset class="present-radio__fieldset">
+    <div class="form-radio">
+        <fieldset class="form-radio__fieldset">
           <legend class="form__title form__legend">Ваше общее впечатление:</legend>
-          <ul class="present-radio__list">
-            <li class="present-radio__item">
+          <ul class="form-radio__list">
+            <li class="form-radio__item">
               <label class="form__title form__label">
-                <input class="present-radio__button" type="radio" name="impression" value="positive" checked>
-                <span class="present-radio__button-custom">Скорее положительное</span>
+                <input class="form-radio__button" type="radio" name="impression" value="positive" checked>
+                <span class="form-radio__button-custom">Скорее положительное</span>
               </label>
             </li>
-            <li class="present-radio__item">
+            <li class="form-radio__item">
               <label class="form__title form__label">
-                <input class="present-radio__button" type="radio" name="impression" value="negative">
-                <span class="present-radio__button-custom">Скорее отрицательное</span>
+                <input class="form-radio__button" type="radio" name="impression" value="negative">
+                <span class="form-radio__button-custom">Скорее отрицательное</span>
               </label>
             </li>
-            <li class="present-radio__item">
+            <li class="form-radio__item">
               <label class="form__title form__label">
-                <input class="present-radio__button" type="radio" name="impression" value="difficulty">
-                <span class="present-radio__button-custom">Затрудняюсь ответить</span>
+                <input class="form-radio__button" type="radio" name="impression" value="difficulty">
+                <span class="form-radio__button-custom">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="present-radio__fieldset">
+        <fieldset class="form-radio__fieldset">
           <legend class="form__title form__legend">Посещенные достопримечательности:</legend>
-          <ul class="present-radio__list">
-            <li class="present-radio__item">
-              <input type="checkbox" class="present-radio__custom-checkbox"  name="bridge" checked>
+          <ul class="form-radio__list">
+            <li class="form-radio__item">
+              <input type="checkbox" class="form-radio__custom-checkbox"  name="bridge" checked>
               <label class="form__title form__label">Мост Дьявола</label>
             </li>
-            <li class="present-radio__item">
-              <input type="checkbox" class="present-radio__custom-checkbox" name="bell" checked>
+            <li class="form-radio__item">
+              <input type="checkbox" class="form-radio__custom-checkbox" name="bell" checked>
               <label class="form__title form__label">Гора-Колокол</label>
             </li>
-            <li class="present-radio__item">
-              <input type="checkbox" class="present-radio__custom-checkbox" name="park" checked>
+            <li class="form-radio__item">
+              <input type="checkbox" class="form-radio__custom-checkbox" name="park" checked>
               <label class="form__title form__label">Слайд-парк</label>
             </li>
-            <li class="present-radio__item">
-              <input type="checkbox" class="present-radio__custom-checkbox" name="rocks">
+            <li class="form-radio__item">
+              <input type="checkbox" class="form-radio__custom-checkbox" name="rocks">
               <label class="form__title form__label">Красные скалы</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="present-radio__fieldset">
+        <fieldset class="form-radio__fieldset">
           <legend class="form__title form__legend">Опишите свои эмоции:</legend>
-          <input class="form__input--block form__input--text" type="text" name="text-field"
+          <input class="form__input-block form__input-text" type="text" name="text-field"
           placeholder="Опишите подробно все свои восторги">
         </fieldset>
-        <button class="button present-radio__button-send" type="submit">Отправить отзыв</button>
-        <span class="present-radio__footnote">* — обязательные поля</span>
+        <button class="button" type="submit">Отправить отзыв</button>
+        <span class="form-radio__footnote">* — обязательные поля</span>
         </div>
         </form>
         </section>
@@ -161,21 +163,17 @@
 
 
   <div class="modal modal--feedback">
-    <h2 class="page__slogan modal__title">Ваш отзыв отправлен!</h2>
+    <h2 class="modal__title">Ваш отзыв отправлен!</h2>
     <p class="page__info modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
       опубликуем его на сайте.</p>
-    <form method="post">
       <button class="button modal__button" type="submit">Ok</button>
-    </form>
   </div>
 
   <div class="modal modal--error">
-    <h2 class="page__slogan modal__title">Что-то пошло не так!</h2>
+    <h2 class="modal__title">Что-то пошло не так!</h2>
     <p class="page__info modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
     </p>
-    <form class="modal__button-form" method="post" action="#">
       <button class="button modal__button modal__button--error" type="button">Закрыть окно</button>
-    </form>
   </div>
 </body>
 

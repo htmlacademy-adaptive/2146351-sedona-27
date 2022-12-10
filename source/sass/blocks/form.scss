@@ -32,17 +32,39 @@
   text-transform: uppercase;
 }
 
-.form__input--block {
+.form__input-block {
   width: 279px;
   height: 150px;
   background: #f2f2f2;
 }
 
-.form__input--text {
+.form__input-text {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
   padding: 16px;
   border: none;
+}
+
+
+.form-radio__fieldset {
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.form-radio__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form-radio__item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
 }
