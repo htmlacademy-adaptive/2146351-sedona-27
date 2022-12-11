@@ -13,9 +13,6 @@
 }
 
 .form__input {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 16px;
   background: #f2f2f2;
   border: none;
@@ -32,7 +29,7 @@
   text-transform: uppercase;
 }
 
-.form__input-block {
+.form__input-textarea {
   width: 279px;
   height: 150px;
   background: #f2f2f2;
@@ -48,7 +45,7 @@
 }
 
 
-.form-radio__fieldset {
+.form__group-fieldset {
   display: flex;
   justify-content: space-around;
   border: none;
@@ -57,13 +54,13 @@
   margin-bottom: 24px;
 }
 
-.form-radio__list {
+.form__group-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.form-radio__item {
+.form__group-item {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
