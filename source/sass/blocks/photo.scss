@@ -1,0 +1,24 @@
+.photo-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.photo-card__image {
+  padding: 24px 20px;
+}
+
+.photo-card__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.photo-card__author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
