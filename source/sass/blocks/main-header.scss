@@ -1,3 +1,13 @@
 .main-header__logo {
   margin-left: 67px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 35%;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 35%;
+  }
 }
