@@ -63,12 +63,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 575px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 960px;
+  }
+}
+
+.form__group-list--option {
+  @media (min-width: $tablet-width) {
+    width: 480px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 980px;
   }
 }
 
@@ -98,4 +110,12 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    width: 298px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+  }
 }

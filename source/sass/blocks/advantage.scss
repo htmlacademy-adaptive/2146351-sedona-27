@@ -13,6 +13,8 @@
 
 .advantage__item {
   background-color: #81b3d2;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -21,6 +23,8 @@
 }
 
 .advantage__container {
+  color: #ffffff;
+
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -48,11 +52,6 @@
 
 .advantage__item--small {
   background: #eeeeee;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .advantage__list-title {

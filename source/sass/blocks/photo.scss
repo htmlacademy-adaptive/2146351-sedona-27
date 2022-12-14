@@ -19,11 +19,52 @@
 
 .photo-list__item {
   @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
     width: 324px;
   }
 
   @media (min-width: $desktop-width) {
     width: 400px;
+  }
+}
+
+.photo__fon {
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+}
+
+.photo-list__item:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    background-color: #eaeaea;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.photo-list__item:nth-child(4) {
+  @media (min-width: $tablet-width) {
+    background-color: #eaeaea;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.photo-list__item--hero {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
   }
 }
 
