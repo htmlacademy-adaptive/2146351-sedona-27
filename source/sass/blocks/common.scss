@@ -2,6 +2,24 @@
   font-family: "PT Sans", sans-serif;
   background-color: #ffffff;
   color: #000000;
+  margin: 0;
+}
+
+.page__body-container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  min-height: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .block-title {

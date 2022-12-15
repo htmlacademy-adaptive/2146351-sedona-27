@@ -3,10 +3,81 @@
   padding: 0;
   list-style-type: none;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.photo-list__item {
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.photo__fon {
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+}
+
+.photo-list__item:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    background-color: #eaeaea;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.photo-list__item:nth-child(4) {
+  @media (min-width: $tablet-width) {
+    background-color: #eaeaea;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.photo-list__item--hero {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .photo-card__image {
   padding: 24px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .photo-card__title {
