@@ -18,6 +18,8 @@
 }
 
 .photo-list__item {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     background-color: #f2f2f2;
     width: 324px;
@@ -29,8 +31,13 @@
 }
 
 .photo__fon {
+  text-align: left;
+  padding-left: 20px;
+
   @media (min-width: $desktop-width) {
-    top: 20px;
+    position: absolute;
+    top: 200px;
+    background-color: #000000;
     color: #ffffff;
     opacity: 0.3;
   }

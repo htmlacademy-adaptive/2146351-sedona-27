@@ -33,6 +33,15 @@
   width: 279px;
   height: 150px;
   background: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 768px;
+  }
 }
 
 .form__input-text {
