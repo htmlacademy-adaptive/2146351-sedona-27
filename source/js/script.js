@@ -1,7 +1,18 @@
-let navMain = document.querySelector(".main-nav");
+let mainHeader = document.querySelector(".main-header");
+mainHeader.classList.remove("main-header--closed");
+
+navToggle.addEventListener("click", function () {
+  if (mainHeader.classList.contains("main-header--closed")) {
+    mainHeader.classList.remove("main-header--closed");
+  } else {
+    mainHeader.classList.add("main-header--closed");
+  }
+});
+
+/* let mainHeader = document.querySelector(".main-header");
 let navToggle = document.querySelector(".main-nav__toggle");
 
-navMain.classList.remove("main-nav--nojs");
+mainHeader.classList.remove("main-nav--nojs");
 
 navToggle.addEventListener("click", function () {
   if (navMain.classList.contains("main-nav--closed")) {
@@ -11,4 +22,4 @@ navToggle.addEventListener("click", function () {
     navMain.classList.add("main-nav--closed");
     navMain.classList.remove("main-nav--opened");
   }
-});
+}); */

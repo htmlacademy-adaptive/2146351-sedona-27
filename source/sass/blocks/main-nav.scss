@@ -2,7 +2,10 @@
   position: relative;
   width: auto;
   min-height: 51px;
-  background-color: #8ec9ef;
+
+  @media (max-width: $mobile-width-only) {
+    background-color: #8ec9ef;
+  }
 }
 
 .main-nav__list {
@@ -35,7 +38,6 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -100px;
   right: 0;
   z-index: 2;
   display: block;
@@ -43,14 +45,34 @@
   height: 45px;
   cursor: pointer;
   border: none;
-  background-color: #ffffff;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 23px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.main-nav--closed .main-nav__toggle::before {
+/* .main-nav__toggle::before {
   content: "";
   position: absolute;
   top: 13px;
@@ -59,9 +81,10 @@
   height: 4px;
   background-color: #8ec9ef;
   box-shadow: 0 8px 0 0 #8ec9ef, 0 16px 0 0 #8ec9ef;
-}
+} */
 
-.main-nav--opened .main-nav__toggle {
+/*
+.main-header--opened .main-nav__toggle {
   top: 2px;
   right: 0;
   left: auto;
@@ -89,7 +112,7 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--closed .site-list__item {
+  .main-header--closed .site-list__item {
     display: none;
 
     &--active {
@@ -97,7 +120,7 @@
     }
   }
 
-  .main-nav--opened .main-nav__wrapper {
+  .main-header--opened .main-nav__wrapper {
     position: absolute;
     top: 0;
     right: 0;
@@ -106,7 +129,7 @@
     min-height: 80vh;
   }
 
-  .main-nav--opened .main-nav__wrapper::before {
+  .main-header--opened .main-nav__wrapper::before {
     content: "";
     position: absolute;
     top: 0;
@@ -116,16 +139,16 @@
     height: 100%;
   }
 
-  .main-nav--nojs .main-nav__toggle {
-    /* display: none; */
+  .main-header--nojs .main-nav__toggle {
+    display: none;
   }
 
-  .main-nav--nojs .main-nav__wrapper {
+  .main-header--nojs .main-nav__wrapper {
     position: static;
     min-height: 0;
   }
 
-  .main-nav--nojs .site-list__item {
+  .main-header--nojs .site-list__item {
     display: block;
   }
-}
+} */
