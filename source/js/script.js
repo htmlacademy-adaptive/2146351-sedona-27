@@ -1,7 +1,7 @@
 let mainHeader = document.querySelector(".main-header");
 mainHeader.classList.remove("main-header--closed");
 
-navToggle.addEventListener("click", function () {
+headerToggle.addEventListener("click", function () {
   if (mainHeader.classList.contains("main-header--closed")) {
     mainHeader.classList.remove("main-header--closed");
   } else {
