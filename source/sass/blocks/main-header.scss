@@ -24,7 +24,9 @@
 
 .main-header__toggle {
   position: absolute;
-  right: 0;
+  right: -10px;
+  top: 0;
+  padding: 0;
   z-index: 2;
   display: block;
   width: 60px;
@@ -33,41 +35,54 @@
   border: none;
   background-color: transparent;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 24px;
-    left: 18px;
-    width: 23px;
-    height: 4px;
-    background-color: #ffffff;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
+.main-header__button {
+  width: 36px;
+  height: 4px;
+  right: 20px;
+  background: #ffffff;
+  display: block;
+  transform: rotate(45deg);
+}
+
+.main-header__button::before,
+.main-header__button::after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 4px;
+  background-color: #ffffff;
+  display: block;
+  transform: rotate(-90deg);
+  top: 0;
+  left: -1px;
+}
+
+.main-header__button::after {
+  display: none;
+}
+
 @media (max-width: $mobile-width-only) {
-  .main-header--closed .main-header__toggle {
-    content: "";
-    position: absolute;
-    top: 13px;
-    right: 20px;
-    width: 36px;
-    height: 4px;
+  .main-header--closed .main-header__button {
+    transform: none;
     background-color: #8ec9ef;
-    box-shadow: 0 8px 0 0 #8ec9ef, 0 16px 0 0 #8ec9ef;
+  }
+
+  .main-header--closed .main-header__button::before {
+    transform: none;
+    top: 10px;
+    background-color: #8ec9ef;
+  }
+
+  .main-header--closed .main-header__button::after {
+    transform: none;
+    display: block;
+    top: 32px;
+    background-color: #8ec9ef;
   }
 
   .main-header--closed .main-nav__wrapper {

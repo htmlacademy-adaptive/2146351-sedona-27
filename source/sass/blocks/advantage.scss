@@ -13,8 +13,6 @@
 
 .advantage__item {
   background-color: #81b3d2;
-  padding-top: 24px;
-  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -64,4 +62,16 @@
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+.advantage__svg {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.advantage__number {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
 }

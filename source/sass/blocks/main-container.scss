@@ -1,5 +1,5 @@
 .main-container__header {
-  margin-bottom: 25px;
+  padding-bottom: 16px;
 }
 
 .main-container__logo {
@@ -7,7 +7,7 @@
   background-position: bottom, center;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  margin-bottom: 39px;
+  padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/group2.svg"), url("../img/tablet.jpg");
