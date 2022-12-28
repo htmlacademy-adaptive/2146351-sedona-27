@@ -12,7 +12,8 @@
 
 <body class="page__body">
   <div class="page__body-container">
-  <header class="main-header">
+    <header class="main-header main-header--nojs">
+    <div class="main-header__wrapper">
     <a class="main-header__logo">
     <svg class="main-header__img" width="185" height="96" viewBox="0 0 185 96" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M185 0H0L79.8097 90.1011C86.8489 97.9663 98.2503 97.9663 105.289 90.1011L185 0Z" fill="#81B3D3"/>
@@ -48,16 +49,19 @@
     <path d="M117.186 41.9144C117.286 42.014 117.484 42.2131 117.186 41.9144C114.311 39.7241 110.941 40.3215 108.759 43.0096C107.768 44.2043 106.777 45.399 105.785 46.5937C106.182 47.0915 106.578 46.4942 107.074 46.7928C107.471 47.0915 113.221 51.8704 113.32 52.169C113.518 52.6668 113.023 52.6668 113.419 53.0651C113.617 53.1646 117.88 47.888 118.277 46.8924C119.169 45.1003 118.574 43.2087 117.186 41.9144ZM115.898 48.6845C115.699 48.9832 115.898 48.784 115.204 49.3814C114.906 49.6801 108.859 44.7021 109.057 44.503C109.85 43.607 111.635 42.91 112.626 43.2087C114.807 43.7065 117.781 46.3946 115.898 48.6845Z" fill="white"/>
     </svg>
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+    <button class="main-header__toggle" type="button">
+      <span class="main-header__button"></span>
+      <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
           <a class="main-nav__link" href="index.html">Главная</a>
         </li>
-        <li class="site-list__item">
-          <a class="main-nav__link" href="#">Фото и видео</a>
+        <li class="site-list__item ">
+          <a class="main-nav__link">Фото и видео</a>
         </li>
         <li class="site-list__item">
           <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -66,6 +70,7 @@
           <a class="main-nav__link" href="#">HTML Academy</a>
         </li>
       </ul>
+    </div>
     </nav>
   </header>
 

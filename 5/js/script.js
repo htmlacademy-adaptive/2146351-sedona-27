@@ -1,7 +1,9 @@
 let mainHeader = document.querySelector(".main-header");
-mainHeader.classList.remove("main-header--closed");
+let headerToggle = document.querySelector(".main-header__toggle");
+mainHeader.classList.add("main-header--closed");
+mainHeader.classList.remove("main-header--nojs");
 
-navToggle.addEventListener("click", function () {
+headerToggle.addEventListener("click", function () {
   if (mainHeader.classList.contains("main-header--closed")) {
     mainHeader.classList.remove("main-header--closed");
   } else {
