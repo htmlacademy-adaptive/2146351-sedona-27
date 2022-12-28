@@ -11,6 +11,7 @@
   width: 320px;
   margin: 0 auto;
   min-height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -19,6 +20,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   }
 }
 

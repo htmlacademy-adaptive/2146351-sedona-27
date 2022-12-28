@@ -3,17 +3,20 @@
 }
 
 .main-header__logo {
+  width: 185px;
+  height: 96px;
   display: none;
   margin-left: 67px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     display: block;
     position: absolute;
-    left: 30%;
+    left: 38%;
   }
 
   @media (min-width: $desktop-width) {
-    left: 37%;
+    left: 43%;
   }
 }
 
@@ -24,13 +27,12 @@
 
 .main-header__toggle {
   position: absolute;
-  right: -10px;
-  top: 0;
-  padding: 0;
+  right: 20px;
+  top: 10px;
   z-index: 2;
   display: block;
-  width: 60px;
-  height: 45px;
+  width: 23px;
+  height: 22px;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -41,7 +43,7 @@
 }
 
 .main-header__button {
-  width: 36px;
+  width: 22px;
   height: 4px;
   right: 20px;
   background: #ffffff;
@@ -53,13 +55,12 @@
 .main-header__button::after {
   content: "";
   position: absolute;
-  width: 36px;
+  width: 22px;
   height: 4px;
   background-color: #ffffff;
   display: block;
   transform: rotate(-90deg);
   top: 0;
-  left: -1px;
 }
 
 .main-header__button::after {
@@ -74,14 +75,14 @@
 
   .main-header--closed .main-header__button::before {
     transform: none;
-    top: 10px;
+    top: 0;
     background-color: #8ec9ef;
   }
 
   .main-header--closed .main-header__button::after {
     transform: none;
     display: block;
-    top: 32px;
+    top: 18px;
     background-color: #8ec9ef;
   }
 

@@ -7,7 +7,6 @@
   background-position: bottom, center;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/group2.svg"), url("../img/tablet.jpg");
@@ -20,6 +19,11 @@
 }
 
 .main-container__img {
+  padding-top: 90px;
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+  }
 }
