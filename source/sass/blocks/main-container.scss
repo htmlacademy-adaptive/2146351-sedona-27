@@ -1,7 +1,3 @@
-.main-container__header {
-  padding-bottom: 16px;
-}
-
 .main-container__logo {
   background-image: url("../img/intro-triangle.svg"), url("../img/back-mobile.jpg");
   background-position: bottom, center;
@@ -26,4 +22,22 @@
   @media (min-width: $tablet-width) {
     padding-top: 77px;
   }
+}
+
+.index-text__title {
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+  }
+}
+
+.index-text__text {
+  margin: 0;
 }

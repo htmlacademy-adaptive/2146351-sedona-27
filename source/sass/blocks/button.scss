@@ -8,4 +8,8 @@
   line-height: 26px;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 121px;
+  }
 }

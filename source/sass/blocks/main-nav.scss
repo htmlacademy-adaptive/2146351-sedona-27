@@ -15,7 +15,6 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -31,8 +30,12 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    background-color: #ffffff;
     color: #000000;
+    box-shadow: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    background-color: transparent;
   }
 }
 /*

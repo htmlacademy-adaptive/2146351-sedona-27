@@ -3,9 +3,6 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  padding-left: 36px;
-  padding-top: 16px;
-  width: 280px;
 }
 
 .form__label:first-child {
@@ -19,6 +16,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  width: 264px;
+
+  @media (min-width: $desktop-width) {
+    width: 414px;
+  }
 }
 
 .form__title {
@@ -59,8 +61,17 @@
   justify-content: space-around;
   border: none;
   padding: 0;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.form__group-fieldset:last-child {
+  border-bottom: none;
 }
 
 .form__group-list {
@@ -71,14 +82,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     width: 575px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     width: 960px;
   }
 }
@@ -102,10 +110,13 @@
 .form__list {
   padding: 0;
   margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: nowrap;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,12 +130,62 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    width: 298px;
+    border-bottom: none;
+    border-right: 1px solid #e5e5e5;
+    padding-left: 60px;
+    padding-right: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 350px;
+    padding-left: 102px;
+    padding-right: 63px;
   }
+}
+
+.form__item:last-child {
+  @media (min-width: $tablet-width) {
+    border-right: none;
+    padding-left: 43px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 63px;
+    padding-right: 102px;
+  }
+}
+
+.form__text {
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.form__initials {
+  padding-left: 20px;
+}
+
+.form__contacts {
+  padding-left: 20px;
+}
+
+.form__legend {
+  padding-top: 24px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 45px;
+  }
+}
+
+.form__group-text {
+  padding-left: 16px;
 }

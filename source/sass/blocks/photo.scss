@@ -1,28 +1,35 @@
 .photo-list {
   margin: 0;
-  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   list-style-type: none;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 67px 60px 0 60px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0;
+    padding-top: 65px;
   }
 }
 
 .photo-list__item {
   position: relative;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     background-color: #f2f2f2;
     width: 324px;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,14 +39,21 @@
 
 .photo__fon {
   text-align: left;
-  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 200px;
+    width: 100%;
     background-color: #000000;
     color: #ffffff;
     opacity: 0.3;
+    bottom: 0;
   }
 }
 
@@ -76,7 +90,7 @@
 }
 
 .photo-card__image {
-  padding: 24px 20px;
+  padding-top: 24px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -93,10 +107,24 @@
   line-height: 21px;
   align-items: center;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 15px;
 }
 
 .photo-card__author {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.photo-card__like-button {
+  background-color: transparent;
+  border: none;
+  padding-top: 11px;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
