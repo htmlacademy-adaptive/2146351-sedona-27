@@ -11,6 +11,7 @@
   width: 320px;
   margin: 0 auto;
   min-height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -19,13 +20,12 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   }
 }
 
 .block-title {
-  padding: 0;
   margin: 0;
-  margin-bottom: 11px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -34,7 +34,6 @@
 }
 
 .block-text {
-  padding: 0;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -80,4 +79,91 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    width: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 240px;
+  }
+}
+
+.site-list__item:nth-last-child(2) {
+  @media (min-width: $tablet-width) {
+    padding-left: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 240px;
+  }
+}
+
+.like-button__count {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 9px;
+  }
+}
+
+.index-text {
+  padding-top: 37px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+  }
+}
+
+.index-text__photo {
+  margin: 0;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
+}
+
+.index-text__comment {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.index-text__review {
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 30px;
+  }
+}
+
+.index-text__comments {
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding-bottom: 102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 67px;
+  }
 }

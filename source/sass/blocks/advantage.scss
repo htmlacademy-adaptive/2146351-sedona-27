@@ -13,8 +13,6 @@
 
 .advantage__item {
   background-color: #81b3d2;
-  padding-top: 24px;
-  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -50,8 +48,28 @@
   }
 }
 
+.advantage__item-title {
+  background-color: #ffffff;
+  padding-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
+    width: 400px;
+  }
+}
+
 .advantage__item--small {
   background: #eeeeee;
+  border-bottom: 1px solid #d6d6d6;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .advantage__list-title {
@@ -63,5 +81,95 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+.advantage__svg {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.advantage__number {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 11px;
+  padding-bottom: 17px;
+}
+
+.advantage-block__title {
+  margin: 0;
+  padding-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+  }
+}
+
+.advantage-block__text {
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 51px;
+  }
+}
+
+.advantage__text-title {
+  margin: 0;
+  padding-top: 33px;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 27px;
+    padding-bottom: 30px;
+  }
+}
+
+.advantage__text-text {
+  margin: 0;
+  padding-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 68px;
+  }
+}
+
+.advantage__title {
+  margin: 0;
+  padding-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 63px;
+  }
+}
+
+.advantage__text-description {
+  margin: 0;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 41px;
   }
 }

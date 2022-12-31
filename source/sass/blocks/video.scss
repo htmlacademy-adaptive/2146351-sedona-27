@@ -9,6 +9,16 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
+  }
 }
 
 .video__description {
@@ -16,4 +26,18 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.video__block {
+  padding-top: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 64px;
+  }
 }
