@@ -43,8 +43,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -106,7 +104,6 @@
   font-size: 14px;
   line-height: 21px;
   align-items: center;
-  text-transform: uppercase;
   margin: 0;
   padding-top: 15px;
 }
@@ -124,7 +121,17 @@
   border: none;
   padding-top: 11px;
 
+  @media (min-width: $tablet-width) {
+    padding-right: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     color: #ffffff;
+  }
+}
+
+.photo__container {
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
   }
 }

@@ -16,11 +16,18 @@
 
 .main-container__img {
   padding-top: 90px;
+  padding-bottom: 85px;
   display: block;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
     padding-top: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 459px;
   }
 }
 

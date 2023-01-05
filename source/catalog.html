@@ -89,20 +89,29 @@
       <h2 class="visually-hidden">Фото</h2>
       <ul class="photo-list">
         <li class="photo-list__item photo-list__item--hero photo-card">
-          <img class="photo-card__image" src="../img/photo-1-mobile.jpg" alt="Неродные просторы">
+          <picture>
+          <source media="(min-width: 1200px)" srcset="../img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="../img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+          <img class="photo-card__image" src="../img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
+          </picture>
           <div class="photo__fon">
           <div class="photo__container">
           <h3 class="photo-card__title">Неродные просторы</h3>
           <p class="photo-card__author">Автор фото: Борис</p>
           </div>
           <button class="photo-card__like-button like-button">
-          <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+          <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+          xmlns="http://www.w3.org/2000/svg" style="fill:white;">
+          <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="white"/>
           </svg><span class="like-button__count">1350</span></button>
         </div>
         </li>
         <li class="photo-list__item photo-card">
-          <img class="photo-card__image" src="../img/photo-2-mobile.jpg" alt="Местная растительность">
+          <picture>
+          <source media="(min-width: 1200px)" srcset="../img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="../img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+          <img class="photo-card__image" src="../img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность">
+          </picture>
           <div class="photo__fon">
           <div class="photo__container">
           <h3 class="photo-card__title">Местная растительность</h3>
@@ -115,7 +124,11 @@
         </div>
         </li>
         <li class="photo-list__item photo-card">
-          <img class="photo-card__image" src="./img/photo-3-mobile.jpg" alt="Дорога на север">
+          <picture>
+          <source media="(min-width: 1200px)" srcset="../img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="../img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+          <img class="photo-card__image" src="./img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
+          </picture>
           <div class="photo__fon">
           <div class="photo__container">
           <h3 class="photo-card__title">Дорога на север</h3>
@@ -128,7 +141,11 @@
         </div>
         </li>
         <li class="photo-list__item photo-card">
-          <img class="photo-card__image" src="../img/photo-4-desktop.jpg" alt="Мост дьявола">
+          <picture>
+          <source media="(min-width: 1200px)" srcset="../img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="../img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+          <img class="photo-card__image" src="../img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола">
+          </picture>
           <div class="photo__fon">
           <div class="photo__container">
           <h3 class="photo-card__title">Мост дьявола</h3>
@@ -146,7 +163,10 @@
     <section class="video">
       <h2 class="video__title">Все еще сомневаетесь?</h2>
       <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <img class="video__block" src="../img/video-mobile.jpg" alt="Видеопрезентацию">
+      <picture>
+      <source media="(min-width: 1200px)" srcset="../img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+      <source media="(min-width: 768px)" srcset="../img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+      <img class="video__block" src="../img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видеопрезентацию">
       <svg width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7"/>
       </svg>
@@ -154,7 +174,7 @@
   </main>
 
   <footer class="footer">
-    <a class="footer__link" href="index.html">#visitsedona</a>
+    <p class="footer__text">#visitsedona</p>
     <ul class="footer__social social-list">
       <li class="social-list__item">
         <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">

@@ -95,7 +95,7 @@
         <form class="present__form form" action="#" method="get">
           <ul class="form__list">
             <li class="form__item">
-              <h2 class="form__title form__text">Представьтесь:</h2>
+              <h2 class="form__title">Представьтесь:</h2>
               <label class="form__label form__initials">Имя*:</label>
               <input
                 class="form__input"
@@ -119,15 +119,15 @@
               />
             </li>
             <li class="form__item">
-              <h2 class="form__title form__text">Контактная информация:</h2>
-              <label class="form__label form__contacts">Контактный телефон*:</label>
+              <h2 class="form__title">Контактная информация:</h2>
+              <label class="form__label">Контактный телефон*:</label>
               <input
                 class="form__input form__input--phone"
                 type="tel"
                 name="phone"
                 placeholder="Введите телефон"
               />
-              <label class="form__label form__contacts">Электронная почта*:</label>
+              <label class="form__label">Электронная почта*:</label>
               <input
                 class="form__input form__input--mail"
                 type="email"
@@ -230,12 +230,11 @@
             <legend class="form__title form__legend">
               Опишите свои эмоции:
             </legend>
-            <input
+            <textarea
               class="form__input-textarea form__input-text"
               type="text"
               name="text-field"
-              placeholder="Опишите подробно все свои восторги"
-            />
+              placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="button" type="submit">Отправить отзыв</button>
           <span class="form__group-footnote">* — обязательные поля</span>
@@ -244,7 +243,7 @@
     </main>
 
     <footer class="footer">
-      <a class="footer__link" href="index.html">#visitsedona</a>
+      <p class="footer__text">#visitsedona</p>
       <ul class="footer__social social-list">
         <li class="social-list__item">
           <a

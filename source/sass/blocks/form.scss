@@ -1,8 +1,15 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
 .form__label {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
+  padding-left: 20px;
 }
 
 .form__label:first-child {
@@ -28,7 +35,9 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  text-transform: uppercase;
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 20px;
 }
 
 .form__input-textarea {
@@ -159,17 +168,7 @@
   }
 }
 
-.form__text {
-  margin: 0;
-  padding-top: 24px;
-  padding-bottom: 20px;
-}
-
 .form__initials {
-  padding-left: 20px;
-}
-
-.form__contacts {
   padding-left: 20px;
 }
 
