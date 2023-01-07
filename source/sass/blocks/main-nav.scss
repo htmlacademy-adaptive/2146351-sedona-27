@@ -28,6 +28,15 @@
   text-align: center;
   text-decoration: none;
 
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     color: #000000;
     box-shadow: none;
@@ -35,6 +44,14 @@
     font-size: 14px;
     line-height: 21px;
     background-color: transparent;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #766357;
+    }
   }
 }
 /*

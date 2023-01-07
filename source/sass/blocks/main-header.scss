@@ -61,6 +61,14 @@
   display: block;
   transform: rotate(-90deg);
   top: 0;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-header__button::after {
@@ -71,6 +79,14 @@
   .main-header--closed .main-header__button {
     transform: none;
     background-color: #8ec9ef;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .main-header--closed .main-header__button::before {

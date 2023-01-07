@@ -6,9 +6,11 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/map-tablet.jpg");
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/map-desktop.jpg");
+    width: 100%;
   }
 }

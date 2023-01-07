@@ -38,7 +38,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  text-align: center;
 }
 
 .visually-hidden {
@@ -115,18 +114,6 @@
   }
 }
 
-.index-text {
-  padding-top: 37px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 66px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 100px;
-  }
-}
-
 .index-text__photo {
   margin: 0;
   padding-bottom: 20px;
@@ -147,17 +134,21 @@
 
 .index-text__review {
   padding-bottom: 24px;
+  padding-top: 36px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 20px;
+    padding-top: 64px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 30px;
+    padding-top: 115px;
   }
 }
 
 .index-text__comments {
+  text-align: center;
   padding-bottom: 28px;
   border-bottom: 1px solid #e5e5e5;
 

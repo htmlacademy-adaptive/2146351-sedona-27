@@ -1,4 +1,5 @@
 .advantage__list {
+  background-color: #eeeeee;
   padding: 0;
   margin: 0;
   margin-top: 32px;
@@ -28,20 +29,6 @@
   }
 }
 
-.advantage__img {
-  width: 320px;
-  height: 260px;
-
-
-  @media (min-width: $tablet-width) {
-    width: 512px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 800px;
-  }
-}
-
 .advantage__text {
   @media (min-width: $tablet-width) {
     width: 256px;
@@ -54,7 +41,7 @@
 
 .advantage__item-title {
   background-color: #ffffff;
-  padding-top: 24px;
+  padding-top: 26px;
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
@@ -71,10 +58,14 @@
   display: block;
   background: #eeeeee;
   border-bottom: 1px solid #d6d6d6;
+  margin-left: 18px;
+  margin-right: 18px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
     width: 256px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -131,8 +122,8 @@
 
 .advantage__text-title {
   margin: 0;
-  padding-top: 33px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-left: 10px;
 
   @media (min-width: $tablet-width) {
     padding-top: 26px;
@@ -147,14 +138,40 @@
 
 .advantage__text-text {
   margin: 0;
-  padding-bottom: 33px;
+  padding-left: 65px;
+  padding-right: 18px;
+  text-align: start;
 
   @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 61px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 68px;
+  }
+}
+
+.advantage__text-text:last-child {
+  padding-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.advantage__text-depiction {
+  text-align: center;
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 51px;
   }
 }
 
@@ -172,6 +189,7 @@
 }
 
 .advantage__text-description {
+  text-align: center;
   margin: 0;
   padding-bottom: 24px;
 
@@ -181,5 +199,15 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 41px;
+  }
+}
+
+.advantage__block {
+  display: flex;
+  padding-left: 19px;
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }

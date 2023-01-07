@@ -7,6 +7,14 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
 
 .copyright__link {
