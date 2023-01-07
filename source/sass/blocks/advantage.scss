@@ -78,10 +78,12 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  padding-bottom: 46px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 0;
   }
 }
 
@@ -122,17 +124,11 @@
 
 .advantage__text-title {
   margin: 0;
-  padding-top: 10px;
+  padding-top: 37px;
   padding-left: 10px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 26px;
-    padding-bottom: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 27px;
-    padding-bottom: 30px;
+    padding-top: 52px;
   }
 }
 
@@ -151,14 +147,6 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 68px;
-  }
-}
-
-.advantage__text-text:last-child {
-  padding-bottom: 46px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 0;
   }
 }
 
