@@ -30,10 +30,12 @@
     background-color: #f2f2f2;
     width: 324px;
     border-bottom: none;
+    padding-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
     width: 400px;
+    padding-bottom: 0;
   }
 }
 
@@ -43,16 +45,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 100%;
-    background-color: #000000;
+    background: rgba(0, 0, 0, 0.3);
     color: #ffffff;
-    opacity: 0.3;
     bottom: 0;
   }
 }
@@ -80,13 +79,7 @@
 }
 
 .photo-list__item--hero {
-  @media (min-width: $tablet-width) {
-    width: 648px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-  }
+  width: 100%;
 }
 
 .photo-card__image {
@@ -106,7 +99,6 @@
   font-size: 14px;
   line-height: 21px;
   align-items: center;
-  text-transform: uppercase;
   margin: 0;
   padding-top: 15px;
 }
@@ -124,7 +116,20 @@
   border: none;
   padding-top: 11px;
 
+  @media (min-width: $tablet-width) {
+    padding-right: 20px;
+  }
+}
+
+.photo__container {
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
+}
+
+.photo__path {
   @media (min-width: $desktop-width) {
-    color: #ffffff;
+    opacity: 1;
+    fill: #ffffff;
   }
 }

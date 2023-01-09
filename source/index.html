@@ -7,6 +7,8 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="sass/style.scss" />
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="../img/favicon/favicon.svg" type="image/svg+xml">
 </head>
 
 <body class="page__body">
@@ -107,14 +109,19 @@
             <div class="advantage__text">
           <h2 class="block-title advantage__text-title">Настоящий городок</h2>
           <div class="advantage__number">— №1 —</div>
-          <p class="block-text advantage__text-text">
+          <p class="block-text advantage__text-depiction">
             Седона не аттракцион для туристов, там течет своя жизнь
           </p>
           </div>
-            <img class="advantage__img" src="../img/photo-city.jpg" alt="Город Седона"/>
+          <picture>
+          <source media="(min-width: 1200px)" srcset="../img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="../img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+          <img class="advantage__img" src="../img/photo-city.jpg" srcset="img/photo-city@2x.jpg 2x" alt="Город Седона"/>
+          </picture>
           </div>
           <ul class="advantage__list-title">
             <li class="advantage__item-title">
+              <div class="advantage__block">
               <svg class="advantage__item-house" width="39" height="37" viewBox="0 0 39 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.9015 33.8041H24.2549V21.646H15.9015V33.8041ZM22.7408 32.3289H17.4155V23.1212H22.6886V32.3289H22.7408Z" fill="#81B3D2" />
                 <path d="M38.4036 20.6278L39.5 19.5595L34.3313 14.5233V0.7882H27.1265V7.50314L19.9739 0.584717L0.5 19.6104L1.59639 20.6787L5.66867 16.7108V35.9399H3.63253V37.4152H36.994V35.9399H34.3313V16.6599L38.4036 20.6278ZM28.6406 2.31432H32.7651V13.0481L28.6406 9.02927V2.31432ZM32.8173 35.889H7.23494V15.1846L19.9739 2.72129L32.7651 15.1846V35.889H32.8173Z" fill="#81B3D2" />
@@ -129,11 +136,13 @@
                 <path d="M30.6769 24.6975H29.1106V26.6815H30.6769V24.6975Z" fill="#81B3D2" />
               </svg>
               <h2 class="block-title advantage__text-title">Жилье</h2>
+              </div>
               <p class="block-text advantage__text-text">
                 Рекомендуем пожить в настоящем мотеле, все как в кино!
               </p>
             </li>
             <li class="advantage__item-title">
+              <div class="advantage__block">
               <svg class="advantage__item-burger" width="40" height="35" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M37.7428 23.8505H2.25722C0.997375 23.8505 0 24.8635 0 26.0285V27.8014C0 28.9664 0.997375 29.9288 2.25722 29.9288H2.78215V30.4354C2.78215 33.2213 5.14436 35.45 7.979 35.45H32.021C34.9081 35.45 37.2178 33.1706 37.2178 30.4354V29.9288H37.7428C38.9501 29.9288 40 28.9664 40 27.7508V25.9779C40 24.8635 39.0026 23.8505 37.7428 23.8505ZM35.6955 30.4354C35.6955 32.3602 34.0682 33.9304 32.0735 33.9304H7.92651C5.93176 33.9304 4.30446 32.3602 4.30446 30.4354V29.9288H35.6955V30.4354ZM38.4252 27.7508C38.4252 28.1053 38.1102 28.4092 37.7428 28.4092H2.25722C1.88976 28.4092 1.5748 28.1053 1.5748 27.7508V25.9779C1.5748 25.674 1.88976 25.3701 2.25722 25.3701H37.7953C38.1627 25.3701 38.4777 25.674 38.4777 26.0285V27.7508H38.4252Z" fill="#81B3D2" />
                 <path d="M8.50395 19.7473L11.3386 21.7735L14.2257 19.7473L17.1129 21.7735L20 19.7473L22.8347 21.7735L25.7218 19.7473L28.6089 21.7735L31.4961 19.7473L34.3832 21.7735L37.6903 19.3928L36.7979 18.1771L34.3832 19.8486L31.4961 17.8225L28.6089 19.8486L25.7218 17.8225L22.8347 19.8486L20 17.8225L17.1129 19.8486L14.2257 17.8225L11.3386 19.8486L8.50395 17.8225L5.61682 19.8486L3.20212 18.1771L2.25723 19.3928L5.61682 21.7735L8.50395 19.7473Z" fill="#81B3D2" />
@@ -143,15 +152,18 @@
                 <path d="M24.1995 6.67871C24.7793 6.67871 25.2493 6.22515 25.2493 5.66565C25.2493 5.10615 24.7793 4.65259 24.1995 4.65259C23.6196 4.65259 23.1496 5.10615 23.1496 5.66565C23.1496 6.22515 23.6196 6.67871 24.1995 6.67871Z" fill="#81B3D2" />
               </svg>
               <h2 class="block-title advantage__text-title">Еда</h2>
+              </div>
               <p class="block-text advantage__text-text">
                 Всегда заказывайте фирменный бургер,вы не разочаруетесь!
               </p>
             </li>
             <li class="advantage__item-title">
+              <div class="advantage__block">
               <svg class="advantage__item-gift" width="32" height="38" viewBox="0 0 32 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M30.5778 11.2058H30.527H18.1841C25.0921 7.76156 25.6508 5.58358 25.3968 4.36796C24.8381 2.39259 22.5524 0.873068 20.419 1.68348C17.6254 2.74714 16.8635 6.9005 16.1016 9.88889C15.1365 6.84985 14.2222 3.0004 12.0381 1.02502C11.4286 0.467863 10.5143 -0.0892942 9.14286 0.0120071C7.11111 0.21461 4.21587 2.69649 5.43492 5.48228C6.55238 8.16676 10.2603 9.88888 12.7492 11.2565H1.42222C0.609524 11.2565 0 11.9149 0 12.6747V18.3475C0 19.158 0.660317 19.7658 1.42222 19.7658H1.5746V38H30.527V19.7658H30.5778C31.3905 19.7658 32 19.1073 32 18.3475V12.6747C32 11.8643 31.3397 11.2058 30.5778 11.2058ZM21.2317 2.94975C22.2984 2.79779 23.7206 3.6082 23.873 4.57057C24.0762 5.93813 22.1968 7.2044 21.3333 7.76156C20.0635 8.62262 18.8444 9.07847 17.6762 9.78758C18.0825 7.91351 18.946 3.25365 21.2317 2.94975ZM9.75238 7.91351C8.63492 7.15375 6.50159 5.68488 6.55238 4.01341C6.60317 2.18999 9.44762 0.721116 10.9714 2.08868C12.9016 3.76016 13.8159 7.66026 14.527 10.3954C12.9016 9.58498 11.3778 8.97717 9.75238 7.91351ZM12.7492 36.4805H3.04762V19.7658H12.7492V36.4805ZM12.7492 18.2462H1.52381V12.7253H12.7492V18.2462ZM17.8286 36.4805H14.2222V12.7253H17.8286V36.4805ZM29.0032 36.4805H19.3524V19.7658H29.054V36.4805H29.0032ZM30.4762 18.2462H19.3524V12.7253H30.4762V18.2462Z" fill="#81B3D2" />
               </svg>
               <h2 class="block-title advantage__text-title">Сувениры</h2>
+              </div>
               <p class="block-text advantage__text-text">
                 Не только китайского, но и местного производства!
               </p>
@@ -164,39 +176,37 @@
             <div class="advantage__text">
           <h2 class="block-title advantage__text-title">Там есть мост дьявола</h2>
           <div class="advantage__number">— №2 —</div>
-          <p class="block-text advantage__text-text">
+          <p class="block-text advantage__text-depiction">
             Да, по нему можно пройти! Если вы осмелитесь, конечно
           </p>
         </div>
-          <img class="advantage__img" src="../img/photo-bridge.jpg" alt="Мост дьявола"/>
+          <picture>
+          <source media="(min-width: 1200px)" srcset="../img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="../img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+          <img class="advantage__img" src="../img/photo-bridge.jpg" srcset="img/photo-bridge@2x.jpg 2x" alt="Мост дьявола"/>
+          </picture>
           </div>
         </li>
         <li class="advantage__item advantage__item--small">
-          <div class="advantage__text">
               <h2 class="block-title advantage__title">Небольшая площадь</h2>
               <div class="advantage__number">— №3 —</div>
               <p class="block-text advantage__text-description">
                 Все интересные места находятся очень близко
               </p>
-            </div>
         </li>
         <li class="advantage__item advantage__item--small">
-          <div class="advantage__text">
               <h2 class="block-title advantage__title">Красивая дорога</h2>
               <div class="advantage__number">— №4 —</div>
               <p class="block-text advantage__text-description">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
-            </div>
         </li>
         <li class="advantage__item advantage__item--small">
-          <div class="advantage__text">
               <h2 class="block-title advantage__title">Мало туристов</h2>
               <div class="advantage__number">— №5 —</div>
               <p class="block-text advantage__text-description">
                 Большинство едет в гранд каньон и толпится там
               </p>
-            </div>
         </li>
       </ul>
     </section>
@@ -211,7 +221,7 @@
 
     <section class="map">
       <h2 class="visually-hidden">Карта Аризоны</h2>
-      <img class="map__img" src="../img/map-mobile.jpg" alt="Карта Аризоны" />
+      <iframe class="map__img" src="../img/map-mobile.jpg" width="320" height="350" alt="Карта Аризоны"></iframe>
       <svg class="map__marker" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M13.5 27C20.9558 27 27 20.9558 27 13.5C27 6.04416 20.9558 0 13.5 0C6.04416 0 0 6.04416 0 13.5C0 20.9558 6.04416 27 13.5 27Z" fill="white" />
         <path d="M13.5 21.8996C18.1392 21.8996 21.9 18.1388 21.9 13.4996C21.9 8.86042 18.1392 5.09961 13.5 5.09961C8.86078 5.09961 5.09998 8.86042 5.09998 13.4996C5.09998 18.1388 8.86078 21.8996 13.5 21.8996Z" fill="#81B3D3" />
@@ -220,12 +230,12 @@
   </main>
 
   <footer class="footer">
-    <a class="footer__link" href="index.html">#visitsedona</a>
+    <p class="footer__text">#visitsedona</p>
     <ul class="footer__social social-list">
       <li class="social-list__item">
         <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
           <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z" fill="white"/>
+          <path class="social-list__path" fill-rule="evenodd" clip-rule="evenodd" d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z" fill="white"/>
           </svg>
           <span class="visually-hidden">Вконтакте</span>
         </a>
@@ -233,14 +243,14 @@
       <li class="social-list__item">
         <a class="social-list__link social-list__link--telegram" href="https://https://t.me/htmlacademy">
         <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36425 16.0695C9.10626 16.3275 8.891 16.5428 8.39375 16.5428L8.741 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02225 10.314L1.25976 8.823C0.224006 8.49975 0.205256 7.78725 1.47576 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z" fill="white"/>
+        <path class="social-list__path" d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36425 16.0695C9.10626 16.3275 8.891 16.5428 8.39375 16.5428L8.741 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02225 10.314L1.25976 8.823C0.224006 8.49975 0.205256 7.78725 1.47576 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z" fill="white"/>
         </svg>
           <span class="visually-hidden">Телеграм</span></a>
       </li>
       <li class="social-list__item">
         <a class="social-list__link social-list__link--yotube" href="https://www.youtube.com/user/htmlacademyru">
           <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17.1813 0H2.81331C1.30618 0 0 1.3 0 2.8V11.1C0 12.7 1.30618 14 2.81331 14H17.1813C18.7889 14 19.9946 12.7 19.9946 11.2V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.03326 10.4V3.6L13.8656 7L7.03326 10.4Z" fill="white"/>
+          <path class="social-list__path" d="M17.1813 0H2.81331C1.30618 0 0 1.3 0 2.8V11.1C0 12.7 1.30618 14 2.81331 14H17.1813C18.7889 14 19.9946 12.7 19.9946 11.2V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.03326 10.4V3.6L13.8656 7L7.03326 10.4Z" fill="white"/>
           </svg>
           <span class="visually-hidden">Ютуб</span></a>
       </li>
@@ -249,7 +259,7 @@
       <b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru/">
         <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black" />
+          <path class="copyright__path" d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black" />
         </svg>
       </a>
     </div>

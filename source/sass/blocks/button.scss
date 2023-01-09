@@ -6,8 +6,16 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  text-transform: uppercase;
   border: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 16px 121px;
