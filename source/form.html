@@ -190,39 +190,44 @@
             </legend>
             <ul class="form__group-list form__group-list--option">
               <li class="form__group-item">
-                <input
+                <label class="form__title form__label form__group-text">
+                <input class="form__custom-checkbox"
                   type="checkbox"
-                  class="form__custom-checkbox"
                   name="bridge"
                   checked
                 />
-                <label class="form__title form__label form__group-text">Мост Дьявола</label>
+                <span class="form__checkbox"></span>
+                Мост Дьявола</label>
               </li>
               <li class="form__group-item">
-                <input
+                <label class="form__title form__label form__group-text">
+                <input class="form__custom-checkbox"
                   type="checkbox"
-                  class="form__custom-checkbox"
                   name="bell"
                   checked
                 />
-                <label class="form__title form__label form__group-text">Гора-Колокол</label>
+                <span class="form__checkbox"></span>
+                Гора-Колокол</label>
               </li>
               <li class="form__group-item">
-                <input
+                <label class="form__title form__label form__group-text">
+                <input class="form__custom-checkbox"
                   type="checkbox"
-                  class="form__custom-checkbox"
                   name="park"
                   checked
                 />
-                <label class="form__title form__label form__group-text">Слайд-парк</label>
+                <span class="form__checkbox"></span>
+                Слайд-парк</label>
               </li>
               <li class="form__group-item">
+                <label class="form__title form__label form__group-text">
                 <input
                   type="checkbox"
                   class="form__custom-checkbox"
                   name="rocks"
                 />
-                <label class="form__title form__label form__group-text">Красные скалы</label>
+                <span class="form__checkbox"></span>
+                Красные скалы</label>
               </li>
             </ul>
           </fieldset>
@@ -327,23 +332,22 @@
       </div>
     </footer>
 
-    <div class="modal modal--feedback">
-      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-      <p class="page__info modal__text">
-        Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
-        мы опубликуем его на сайте.
+    <div class="modal modal--error">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <p class="page__info modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
       </p>
       <button class="button modal__button" type="submit">Ok</button>
     </div>
 
-    <div class="modal modal--error">
-      <h2 class="modal__title">Что-то пошло не так!</h2>
-      <p class="page__info modal__text">
-        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+    <div class="modal modal--feedback">
+      <h2 class="modal__title modal__title-text">Ваш отзыв отправлен!</h2>
+      <p class="page__info modal__text modal__text-text">
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
+        мы опубликуем его на сайте
       </p>
-      <button class="button modal__button modal__button--error" type="button">
-        Закрыть окно
-      </button>
+      <div class="modal__fon">
+      <button class="button modal__button modal__button--error" type="button">Закрыть окно</button>
+      </div>
     </div>
     </div>
   </body>
