@@ -45,6 +45,7 @@
   line-height: 26px;
   text-align: center;
   margin: 0;
+  padding-left: 10px;
   padding-top: 24px;
   padding-bottom: 20px;
 }
@@ -197,3 +198,17 @@
 .form__group-text {
   padding-left: 16px;
 }
+
+/* .form__custom-checkbox {
+  position: absolute;
+  appearance: none;
+}
+
+.form__checkbox {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  padding-bottom: 20px;
+  background-image: url("../img/checked.svg");
+  background-repeat: no-repeat;
+} */
