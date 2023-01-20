@@ -4,7 +4,21 @@
   align-items: center;
 }
 
+//.modal__overlay {
+//  position: fixed;
+//  background-color: rgba(0, 0, 0, 0.3);
+//  z-index: 100;
+//  top: 0;
+//  left: 0;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  width: 100%;
+//  height: 100vh;
+//}
+
 .modal--feedback {
+  background-color: #ffffff;
   width: 320px;
   height: 323px;
 
@@ -50,6 +64,7 @@
 }
 
 .modal--error {
+  background-color: #ffffff;
   width: 320px;
   height: 323px;
 
