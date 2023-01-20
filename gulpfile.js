@@ -32,7 +32,7 @@ export const styles = () => {  //name
 const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('build/html'));
 }
 
 // scripts
@@ -102,14 +102,14 @@ const copy = (done) => {
 
 //clean
 
-export const clean = () => {
+const clean = () => {
   return del('build');
 };
 
 
 // Server
 
-export const server = (done) => {
+const server = (done) => {
   browser.init({
     server: {
       baseDir: 'build'
@@ -170,4 +170,3 @@ export default gulp.series(
       server,
       watcher
 ));
-
