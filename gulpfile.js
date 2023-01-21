@@ -53,7 +53,7 @@ const opimizeImages = () => {
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src('source/img/**/*.{jpg,png,svg}')
   .pipe(gulp.dest('build/img'));
 }
 
@@ -70,7 +70,7 @@ const createWebp = () => {
 //svg
 
 const svg = () =>
-  gulp.src(['source/img/*.svg", "!source/img/icons/*.svg'])
+  gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
