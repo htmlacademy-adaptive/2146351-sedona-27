@@ -139,10 +139,19 @@
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
     padding-bottom: 0;
+    padding-left: 155px;
+    padding-right: 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 371px;
+    padding-right: 371px;
   }
 }
 
@@ -165,13 +174,19 @@
   text-align: center;
   padding-bottom: 28px;
   border-bottom: 1px solid #e5e5e5;
+  padding-left: 7px;
+  padding-right: 7px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
     padding-bottom: 102px;
+    padding-left: 167px;
+    padding-right: 166px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 67px;
+    padding-left: 383px;
+    padding-right: 383px;
   }
 }

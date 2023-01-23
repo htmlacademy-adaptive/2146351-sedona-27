@@ -5,10 +5,10 @@
 }
 
 .form__label {
+  display: inline-block;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  padding-left: 20px;
 }
 
 .form__label:first-child {
@@ -50,6 +50,10 @@
   text-align: center;
   margin: 0;
   padding-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .form__input-textarea {
@@ -87,13 +91,13 @@
 .form__group-fieldset {
   display: flex;
   border: none;
-  padding: 0;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  margin: 0;
+  padding: 24px 20px;
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+    padding: 0;
   }
 }
 
@@ -109,22 +113,23 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 575px;
+    justify-content: flex-start;
+    padding-left: 96px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
+    padding-left: 173px;
+    justify-content: center;
   }
 }
 
 .form__group-list--option {
   @media (min-width: $tablet-width) {
-    width: 480px;
+    padding-left: 144px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 980px;
+    padding-left: 165px;
   }
 }
 
@@ -137,7 +142,6 @@
     margin-bottom: 16px;
   }
 }
-
 
 .form__list {
   padding: 0;
@@ -167,9 +171,10 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    border-right: 1px solid #e5e5e5;
+    border-right: 1px solid #d8d8d8;
     padding-left: 60px;
     padding-right: 43px;
+    padding-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -193,17 +198,19 @@
 
 .form__initials {
   padding-left: 20px;
+  padding-top: 16px;
 }
 
 .form__legend {
   padding-top: 24px;
-  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 48px;
     padding-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 56px;
     padding-bottom: 45px;
   }
 }
@@ -212,11 +219,32 @@
   display: flex;
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+    padding-right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 28px;
+  }
+
   &:hover {
     .form__checkbox,
     .form__group-button-custom {
       background-color: #e5e5e5;
     }
+  }
+}
+
+.form__group-description {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 64px;
   }
 }
 

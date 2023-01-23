@@ -28,6 +28,16 @@
   }
 }
 
+.advantage__container-bridge {
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+  }
+}
+
+.advantage__img {
+  height: 100%;
+}
+
 .advantage__text {
   @media (min-width: $tablet-width) {
     width: 256px;
