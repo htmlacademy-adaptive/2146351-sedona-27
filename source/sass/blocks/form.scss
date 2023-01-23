@@ -101,6 +101,15 @@
   }
 }
 
+.form__group-border {
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+
+  }
+}
+
 .form__group-fieldset:last-child {
   border-bottom: none;
 }
@@ -119,7 +128,6 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 173px;
-    justify-content: center;
   }
 }
 
@@ -129,7 +137,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 165px;
+    width: 960px;
+    padding-left: 120px;
   }
 }
 
@@ -140,6 +149,10 @@
 
   &:not(:last-child) {
     margin-bottom: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
   }
 }
 
