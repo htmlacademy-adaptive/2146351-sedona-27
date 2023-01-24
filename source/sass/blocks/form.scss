@@ -103,10 +103,7 @@
 
 .form__group-border {
   @media (min-width: $tablet-width) {
-    display: block;
-    text-align: center;
-    border-top: 1px solid #e5e5e5;
-
+    border-top: 1px solid #dbdbdb;
   }
 }
 
@@ -137,8 +134,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
-    padding-left: 120px;
+    padding-left: 165px;
   }
 }
 
@@ -153,6 +149,10 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: initial;
   }
 }
 
@@ -220,6 +220,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 48px;
     padding-bottom: 28px;
+    width: 402px;
   }
 
   @media (min-width: $desktop-width) {
@@ -257,7 +258,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 64px;
+    padding-right: 48px;
   }
 }
 
