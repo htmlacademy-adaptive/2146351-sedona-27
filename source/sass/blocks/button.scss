@@ -25,19 +25,16 @@
 
 .button-review {
   width: 284px;
-  margin-left: 20px;
   margin-right: 20px;
   padding: 16px 0;
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    margin-left: 60px;
     margin-right: 0;
-    margin-top: 48px;
   }
 
   @media (min-width: $desktop-width) {
     width: 384px;
-    margin-left: 216px;
+    margin-left: 96px;
   }
 }
