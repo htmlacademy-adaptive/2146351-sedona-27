@@ -26,6 +26,18 @@
   line-height: 21px;
   margin: 0;
   padding-top: 30px;
+  padding-left: 27px;
+  padding-right: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 161px;
+    padding-right: 161px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 377px;
+    padding-right: 377px;
+  }
 }
 
 .video__block {

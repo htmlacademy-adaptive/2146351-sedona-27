@@ -2,7 +2,6 @@
   background-color: #eeeeee;
   padding: 0;
   margin: 0;
-  margin-top: 32px;
   list-style-type: none;
   text-align: center;
 
@@ -27,6 +26,16 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+}
+
+.advantage__container-bridge {
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+  }
+}
+
+.advantage__img {
+  height: 100%;
 }
 
 .advantage__text {
@@ -99,6 +108,16 @@
   line-height: 21px;
   padding-top: 11px;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
 }
 
 .advantage-block__title {
@@ -128,7 +147,12 @@
   padding-left: 10px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 52px;
+    padding: 52px 43px 0 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -139,27 +163,33 @@
   text-align: start;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 61px;
+    padding: 26px 33px 61px 33px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 68px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
 .advantage__text-depiction {
   text-align: center;
+  padding-left: 18px;
+  padding-right: 18px;
   padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 31px;
+    padding-left: 33px;
+    padding-right: 33px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 51px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -183,10 +213,14 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 52px;
+    padding-left: 33px;
+    padding-right: 33px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 41px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -196,7 +230,7 @@
   padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    display: inline;
+    display: inline-block;
   }
 }
 

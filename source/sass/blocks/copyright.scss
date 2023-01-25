@@ -9,14 +9,6 @@
   line-height: 21px;
   padding-right: 12px;
   color: #333333;
-
-  &:hover {
-    color: #81b3d2;
-  }
-
-  &:active {
-    color: #b3b3b3;
-  }
 }
 
 
@@ -27,23 +19,22 @@
   top: 12px;
 
   &:hover {
-    color: #81b3d2;
+    .copyright__path,
+    .copyright__text {
+      color: #81b3d2;
+      fill: #81b3d2;
+    }
   }
 
   &:active {
-    color: #b3b3b3;
+    .copyright__path,
+    .copyright__text {
+      color: #b3b3b3;
+      fill: #b3b3b3;
+    }
   }
 }
 
-.copyright__path {
-  &:hover {
-    fill: #81b3d2;
-  }
-
-  &:active {
-    fill: #b3b3b3;
-  }
-}
 
 .copyright__svg {
   vertical-align: middle;
