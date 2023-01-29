@@ -1,0 +1,264 @@
+.advantage__list {
+  background-color: #eeeeee;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.advantage__item {
+  background-color: #81b3d2;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.advantage__container {
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.advantage__container--bridge {
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+  }
+}
+
+.advantage__img {
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
+.advantage__text {
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.advantage__item-title {
+  background-color: #ffffff;
+  padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
+    width: 400px;
+  }
+}
+
+.advantage__item--small {
+  display: block;
+  background: #eeeeee;
+  border-bottom: 1px solid #d6d6d6;
+  margin-left: 18px;
+  margin-right: 18px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    width: 256px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.advantage__list-title {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+}
+
+.advantage__svg {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.advantage__number {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 11px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+}
+
+.advantage-block__title {
+  margin: 0;
+  padding-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+  }
+}
+
+.advantage-block__text {
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 51px;
+  }
+}
+
+.advantage__text-title {
+  margin: 0;
+  padding-top: 9px;
+  padding-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 52px 43px 0 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.advantage__text-text {
+  margin: 0;
+  padding-left: 65px;
+  padding-right: 18px;
+  text-align: start;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 33px 61px 33px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 68px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.advantage__text-depiction {
+  text-align: center;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 31px;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 51px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.advantage__title {
+  margin: 0;
+  padding-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 63px;
+  }
+}
+
+.advantage__text-description {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 52px;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 41px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.advantage__block {
+  display: flex;
+  padding-left: 19px;
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
+.advantage-item__icon-house {
+  @media (min-width: $tablet-width) {
+    width: 77px;
+    height: 72px;
+  }
+}
+
+.advantage-item__icon-burger {
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 68px;
+  }
+}
+
+.advantage-item__icon-gift {
+  @media (min-width: $tablet-width) {
+    width: 66px;
+    height: 75px;
+  }
+}

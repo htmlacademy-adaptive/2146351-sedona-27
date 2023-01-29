@@ -1,0 +1,23 @@
+.map {
+  padding: 0;
+  padding-top: 49px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.map__img {
+  width: 100%;
+  height: 350px;
+}
+
+.map__iframe100 {
+  background: url("img/map-mobile.jpg");
+
+  @media (min-width: $tablet-width) {
+    background: url("img/map-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("img/map-desktop.jpg");
+  }
+}

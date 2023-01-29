@@ -60,10 +60,10 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="main-nav__link">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+              <a class="main-nav__link">Фото и видео</a>
             </li>
             <li class="site-list__item">
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -76,134 +76,122 @@
       </nav>
     </header>
     <main class="main-container">
-      <header class="main-container__header">
-        <h1 class="visually-hidden">Седона — небольшой городок в Аризоне</h1>
-        <div class="main-container__logo">
-        <img alt="Добро пожаловать" class="main-container__img" src="img/text-index.svg">
-        </div>
+      <div class="main-container__header">
+        <h1 class="visually-hidden">Седона</h1>
+        <div class="main-container__logo"><img alt="Седона" class="main-container__img" src="img/sedona-header.svg"></div>
         <section class="index-text">
-          <h2 class="visually-hidden">Седона-заслуживает большего</h2>
-          <h3 class="block-title index-text__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
-          <p class="block-text index-text__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-          </p>
+          <h2 class="block-title index-text__photo">Фото и видео</h2>
+          <p class="block-text index-text__comment">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </section>
-      </header>
-      <section class="advantage">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="advantage__list">
-          <li class="advantage__item">
-            <div class="advantage__container">
-              <svg class="advantage__svg" height="37" viewbox="0 0 320 37" width="320" xmlns="http://www.w3.org/2000/svg">
-                <mask height="37" id="mask0_29492_888" maskunits="userSpaceOnUse" style="mask-type:alpha" width="320" x="0" y="0">
-                  <rect fill="#C4C4C4" height="37" width="320"></rect>
-                </mask>
-                <g mask="url(#mask0_29492_888)">
-                  <path clip-rule="evenodd" d="M-225 0H159V37L-225 0Z" fill="white" fill-rule="evenodd"></path>
-                  <path clip-rule="evenodd" d="M543 0H159V37L543 0Z" fill="white" fill-rule="evenodd"></path>
-                </g>
-              </svg>
-              <div class="advantage__text">
-                <h2 class="block-title advantage__text-title">Настоящий городок</h2>
-                <div class="advantage__number">
-                  — №1 —
-                </div>
-                <p class="block-text advantage__text-depiction">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      </div>
+      <section class="photo">
+        <h2 class="visually-hidden">Фото</h2>
+        <ul class="photo-list">
+          <li class="photo-list__item photo-list__item--hero photo-card">
+            <a class="photo__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img alt="Неродные просторы" class="photo-card__image--hero" width="280" height="280" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x">
+            </picture>
+            </a>
+            <div class="photo__background">
+              <div class="photo__container">
+                <h3 class="photo-card__title">Неродные просторы</h3>
+                <p class="photo-card__author">Автор фото: Борис</p>
               </div>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-city.webp 1x, img/photo-city@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
-                <img alt="Город Седона" class="advantage__img" width="320" height="260" src="img/photo-city.jpg" srcset="img/photo-city@2x.jpg 2x">
-              </picture>
+              <button class="photo-card__like-button like-button">
+                <svg class="photo__icon-like" height="21" width="23">
+                  <use xlink:href="img/sprite/sprite.svg#icon-like"></use>
+                </svg> <span class="like-button__count">1350</span></button>
             </div>
-            <ul class="advantage__list-title advantage-item">
-              <li class="advantage__item-title">
-                <div class="advantage__block">
-                  <svg class="advantage-item__icon-house" width="39" height="37">
-                    <use xlink:href="img/sprite/sprite.svg#icon-house"></use>
-                  </svg>
-                  <h2 class="block-title advantage__text-title">Жилье</h2>
-                </div>
-                <p class="block-text advantage__text-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </li>
-              <li class="advantage__item-title">
-                <div class="advantage__block">
-                  <svg class="advantage-item__icon-burger" height="35" width="40">
-                    <use xlink:href="img/sprite/sprite.svg#icon-burger"></use>
-                  </svg>
-                  <h2 class="block-title advantage__text-title">Еда</h2>
-                </div>
-                <p class="block-text advantage__text-text">Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
-              </li>
-              <li class="advantage__item-title">
-                <div class="advantage__block">
-                  <svg class="advantage-item__icon-gift" height="38" width="32">
-                    <use xlink:href="img/sprite/sprite.svg#icon-gift"></use>
-                  </svg>
-                  <h2 class="block-title advantage__text-title">Сувениры</h2>
-                </div>
-                <p class="block-text advantage__text-text">Не только китайского, но и местного производства!</p>
-              </li>
-            </ul>
           </li>
-          <li class="advantage__item">
-            <div class="advantage__container advantage__container--bridge">
-              <div class="advantage__text">
-                <h2 class="block-title advantage__text-title">Там есть мост дьявола</h2>
-                <div class="advantage__number">
-                  — №2 —
-                </div>
-                <p class="block-text advantage__text-depiction">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <li class="photo-list__item photo-card">
+            <a class="photo__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img alt="Местная растительность" class="photo-card__image" width="280" height="280" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x">
+            </picture>
+            </a>
+            <div class="photo__background">
+              <div class="photo__container">
+                <h3 class="photo-card__title">Местная растительность</h3>
+                <p class="photo-card__author">Автор фото: Сергей</p>
               </div>
-              <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-bridge.webp 1x, img/photo-bridge@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-              <img alt="Мост дьявола" class="advantage__img" width="320" height="260" src="img/photo-bridge.jpg" srcset="img/photo-bridge@2x.jpg 2x">
-              </picture>
+              <button class="photo-card__like-button like-button">
+                <svg class="photo__icon-like" height="21" width="23">
+                  <use xlink:href="img/sprite/sprite.svg#icon-like"></use>
+                </svg> <span class="like-button__count">143</span></button>
             </div>
           </li>
-          <li class="advantage__item advantage__item--small">
-            <h2 class="block-title advantage__title">Небольшая площадь</h2>
-            <div class="advantage__number">
-              — №3 —
+          <li class="photo-list__item photo-card">
+            <a class="photo__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img alt="Дорога на север" class="photo-card__image" width="280" height="280" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x">
+            </picture>
+            </a>
+            <div class="photo__background">
+              <div class="photo__container">
+                <h3 class="photo-card__title">Дорога на север</h3>
+                <p class="photo-card__author">Автор фото: Петр</p>
+              </div>
+              <button class="photo-card__like-button like-button">
+                <svg class="photo__icon-like" height="21" width="23">
+                  <use xlink:href="img/sprite/sprite.svg#icon-like"></use>
+                </svg> <span class="like-button__count">96</span></button>
             </div>
-            <p class="block-text advantage__text-description">Все интересные места находятся очень близко</p>
           </li>
-          <li class="advantage__item advantage__item--small">
-            <h2 class="block-title advantage__title">Красивая дорога</h2>
-            <div class="advantage__number">
-              — №4 —
+          <li class="photo-list__item photo-card">
+            <a class="photo__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img alt="Мост дьявола" class="photo-card__image" width="280" height="280" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x">
+            </picture>
+            </a>
+            <div class="photo__background">
+              <div class="photo__container">
+                <h3 class="photo-card__title">Мост дьявола</h3>
+                <p class="photo-card__author">Автор фото: Антон</p>
+              </div>
+              <button class="photo-card__like-button like-button" type="button">
+                <svg class="photo__icon-like" height="21" width="23">
+                  <use xlink:href="img/sprite/sprite.svg#icon-like"></use>
+                </svg> <span class="like-button__count">254</span></button>
             </div>
-            <p class="block-text advantage__text-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="advantage__item advantage__item--small">
-            <h2 class="block-title advantage__title">Мало туристов</h2>
-            <div class="advantage__number">
-              — №5 —
-            </div>
-            <p class="block-text advantage__text-description">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </section>
-      <section class="interest">
-        <h2 class="interest__title">Заинтересовались?</h2>
-        <p class="block-text interest__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p><a class="button interest__button" href="#">Найти гостиницу</a>
-      </section>
-      <section class="map">
-        <h2 class="visually-hidden">Карта Аризоны</h2>
-        <div class="map__iframe100">
+      <section class="video">
+        <h2 class="video__title">Все еще сомневаетесь?</h2>
+        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img alt="Видеопрезентацию" class="video__block"  width="280" height="177" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x">
+        </picture>
+          <svg class="video__play" height="54" width="48" viewbox="0 0 48 54" xmlns="http://www.w3.org/2000/svg">
+          <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7"></path>
+          </svg>
 
-          <iframe allowfullscreen class="map__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1880685.8569636845!2d-112.6413041163993!3d34.89484444927181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1673335240829!5m2!1sru!2sru" style="border:0;"></iframe>
-        </div>
-        <svg class="map__marker" height="27" viewbox="0 0 27 27" width="27" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.5 27C20.9558 27 27 20.9558 27 13.5C27 6.04416 20.9558 0 13.5 0C6.04416 0 0 6.04416 0 13.5C0 20.9558 6.04416 27 13.5 27Z" fill="white"></path>
-          <path d="M13.5 21.8996C18.1392 21.8996 21.9 18.1388 21.9 13.4996C21.9 8.86042 18.1392 5.09961 13.5 5.09961C8.86078 5.09961 5.09998 8.86042 5.09998 13.4996C5.09998 18.1388 8.86078 21.8996 13.5 21.8996Z" fill="#81B3D3"></path>
-        </svg>
       </section>
     </main>
     <footer class="footer">
@@ -238,8 +226,6 @@
       </div>
     </footer>
   </div>
-  <script src="js/script.js">
-  </script>
 </body>
 
 </html>

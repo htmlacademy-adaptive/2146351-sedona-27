@@ -1,0 +1,129 @@
+.main-header {
+  position: relative;
+}
+
+.main-header__logo {
+  width: 185px;
+  height: 96px;
+  display: none;
+  margin-left: 67px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    display: block;
+    position: absolute;
+    left: 38%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 43%;
+  }
+}
+
+.main-header__wrapper {
+  width: 100%;
+  position: absolute;
+}
+
+.main-header__toggle {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  z-index: 2;
+  display: block;
+  width: 23px;
+  height: 22px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__button {
+  width: 22px;
+  height: 4px;
+  right: 20px;
+  background: #ffffff;
+  display: block;
+  transform: rotate(45deg);
+}
+
+.main-header__button::before,
+.main-header__button::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 4px;
+  background-color: #ffffff;
+  display: block;
+  transform: rotate(-90deg);
+  top: 0;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__button::after {
+  display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-header--closed .main-header__button {
+    transform: none;
+    background-color: #8ec9ef;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  .main-header--closed .main-header__button::before {
+    transform: none;
+    top: 0;
+    background-color: #8ec9ef;
+  }
+
+  .main-header--closed .main-header__button::after {
+    transform: none;
+    display: block;
+    top: 18px;
+    background-color: #8ec9ef;
+  }
+
+  .main-header--closed .main-nav__wrapper {
+    display: none;
+  }
+
+  .main-header--closed .main-nav {
+    background-color: transparent;
+  }
+
+  .main-header--closed .main-header__logo {
+    display: block;
+  }
+
+  .main-header--nojs .main-header__toggle {
+    display: none;
+  }
+
+  .main-header--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-header--nojs .site-list__item {
+    display: block;
+  }
+}
