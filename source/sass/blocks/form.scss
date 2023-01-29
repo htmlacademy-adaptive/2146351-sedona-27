@@ -16,22 +16,27 @@
 }
 
 .form__input {
-  padding: 16px;
+  padding: 10px;
   background: #f2f2f2;
-  border: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  cursor: pointer;
   width: 100%;
   box-sizing: border-box;
+  border: 4px solid #f2f2f2;
 
   &:hover {
     background-color: #e5e5e5;
+    border: 4px solid #e5e5e5;
   }
 
   &:active {
     background-color: #ffffff;
-    border: 4px solid #e5e5e5;
+  }
+
+  &:focus {
+    outline: 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -41,6 +46,10 @@
   @media (min-width: $desktop-width) {
     width: 388px;
   }
+}
+
+.form__input::placeholder {
+  color: #000000;
 }
 
 .form__title {
@@ -56,14 +65,11 @@
   }
 }
 
-.form__group-textarea {
-  @media (min-width: $desktop-width) {
-    padding-left: 96px;
-    padding-right: 96px;
-  }
-}
-
 .form__input-textarea {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
   width: 100%;
   height: 150px;
   background: #f2f2f2;
@@ -72,12 +78,14 @@
   @media (min-width: $tablet-width) {
     height: 160px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 96px;
+    margin-right: 96px;
+  }
 }
 
 .form__input-text::placeholder {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
   padding: 16px;
   margin-right: 20px;
@@ -226,6 +234,8 @@
 .form__group-text {
   display: flex;
   align-items: center;
+  text-transform: initial;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     padding-right: 28px;
@@ -242,6 +252,8 @@
 .form__group-description {
   display: flex;
   align-items: center;
+  text-transform: initial;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding-right: 32px;

@@ -6,6 +6,7 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  cursor: pointer;
   border: none;
   text-transform: uppercase;
 
@@ -20,17 +21,20 @@
 }
 
 .interest__button {
+  padding: 16px 32px;
   display: inline-block;
 }
 
 .button-review {
   width: 284px;
+  margin-left: 20px;
   margin-right: 20px;
   padding: 16px 0;
 
   @media (min-width: $tablet-width) {
     width: 324px;
     margin-right: 0;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {

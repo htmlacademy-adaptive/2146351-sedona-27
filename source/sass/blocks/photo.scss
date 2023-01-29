@@ -38,7 +38,7 @@
   }
 }
 
-.photo__fon {
+.photo__background {
   text-align: left;
 
   @media (min-width: $tablet-width) {
@@ -81,11 +81,28 @@
   width: 100%;
 }
 
+.photo-card__image--hero {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
 .photo-card__image {
   padding-top: 24px;
 
   @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 267px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
   }
 }
 

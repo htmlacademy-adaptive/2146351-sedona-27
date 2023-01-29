@@ -8,7 +8,11 @@
   <link href="css/style.min.css" rel="stylesheet">
   <link href="sass/style.scss" rel="stylesheet">
   <link href="favicon.ico" rel="icon">
-  <link href="../img/favicon/favicon.svg" rel="icon" type="image/svg+xml">
+  <link href="img/favicon/favicon.svg" rel="icon" type="image/svg+xml">
+  <link rel="placeholder" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
+  <link rel="placeholder" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="placeholder" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="placeholder" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -74,11 +78,14 @@
     <main class="main-container">
       <header class="main-container__header">
         <h1 class="visually-hidden">Седона — небольшой городок в Аризоне</h1>
-        <div class="main-container__logo"><img alt="Добро пожаловать" class="main-container__img" src="../img/text-index.svg"></div>
+        <div class="main-container__logo">
+        <img alt="Добро пожаловать" class="main-container__img" src="img/text-index.svg">
+        </div>
         <section class="index-text">
           <h2 class="visually-hidden">Седона-заслуживает большего</h2>
           <h3 class="block-title index-text__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
-          <p class="block-text index-text__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <p class="block-text index-text__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          </p>
         </section>
       </header>
       <section class="advantage">
@@ -103,8 +110,13 @@
                 <p class="block-text advantage__text-depiction">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg, img/photo-city-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg, img/photo-city-tablet@2x.jpg 2x"><img alt="Город Седона" class="advantage__img" src="../img/photo-city.jpg" srcset="img/photo-city@2x.jpg 2x"></picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-city.webp 1x, img/photo-city@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                <img alt="Город Седона" class="advantage__img" width="320" height="260" src="img/photo-city.jpg" srcset="img/photo-city@2x.jpg 2x">
+              </picture>
             </div>
             <ul class="advantage__list-title advantage-item">
               <li class="advantage__item-title">
@@ -137,7 +149,7 @@
             </ul>
           </li>
           <li class="advantage__item">
-            <div class="advantage__container advantage__container-bridge">
+            <div class="advantage__container advantage__container--bridge">
               <div class="advantage__text">
                 <h2 class="block-title advantage__text-title">Там есть мост дьявола</h2>
                 <div class="advantage__number">
@@ -146,8 +158,12 @@
                 <p class="block-text advantage__text-depiction">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg, img/photo-bridge-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg, img/photo-bridge-tablet@2x.jpg 2x"><img alt="Мост дьявола" class="advantage__img" src="../img/photo-bridge.jpg" srcset="img/photo-bridge@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-bridge.webp 1x, img/photo-bridge@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img alt="Мост дьявола" class="advantage__img" width="320" height="260" src="img/photo-bridge.jpg" srcset="img/photo-bridge@2x.jpg 2x">
               </picture>
             </div>
           </li>
@@ -181,6 +197,7 @@
       <section class="map">
         <h2 class="visually-hidden">Карта Аризоны</h2>
         <div class="map__iframe100">
+
           <iframe allowfullscreen class="map__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1880685.8569636845!2d-112.6413041163993!3d34.89484444927181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1673335240829!5m2!1sru!2sru" style="border:0;"></iframe>
         </div>
         <svg class="map__marker" height="27" viewbox="0 0 27 27" width="27" xmlns="http://www.w3.org/2000/svg">
@@ -221,7 +238,7 @@
       </div>
     </footer>
   </div>
-  <script src="../js/script.js">
+  <script src="js/script.js">
   </script>
 </body>
 

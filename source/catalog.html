@@ -7,6 +7,12 @@
   <title>HTML Academy: Седона</title>
   <link href="css/style.min.css" rel="stylesheet">
   <link href="sass/style.scss" rel="stylesheet">
+  <link href="favicon.ico" rel="icon">
+  <link href="img/favicon/favicon.svg" rel="icon" type="image/svg+xml">
+  <link rel="placeholder" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
+  <link rel="placeholder" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="placeholder" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="placeholder" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -84,12 +90,15 @@
           <li class="photo-list__item photo-list__item--hero photo-card">
             <a class="photo__link" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg, img/photo-1-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg, img/photo-1-tablet@2x.jpg 2x">
-              <img alt="Неродные просторы" class="photo-card__image" src="../img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img alt="Неродные просторы" class="photo-card__image--hero" width="280" height="280" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x">
             </picture>
             </a>
-            <div class="photo__fon">
+            <div class="photo__background">
               <div class="photo__container">
                 <h3 class="photo-card__title">Неродные просторы</h3>
                 <p class="photo-card__author">Автор фото: Борис</p>
@@ -103,12 +112,15 @@
           <li class="photo-list__item photo-card">
             <a class="photo__link" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg, img/photo-2-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg, img/photo-2-tablet@2x.jpg 2x">
-              <img alt="Местная растительность" class="photo-card__image" src="../img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img alt="Местная растительность" class="photo-card__image" width="280" height="280" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x">
             </picture>
             </a>
-            <div class="photo__fon">
+            <div class="photo__background">
               <div class="photo__container">
                 <h3 class="photo-card__title">Местная растительность</h3>
                 <p class="photo-card__author">Автор фото: Сергей</p>
@@ -122,12 +134,15 @@
           <li class="photo-list__item photo-card">
             <a class="photo__link" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg, img/photo-3-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet@2x.jpg 2x">
-              <img alt="Дорога на север" class="photo-card__image" src="./img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img alt="Дорога на север" class="photo-card__image" width="280" height="280" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x">
             </picture>
             </a>
-            <div class="photo__fon">
+            <div class="photo__background">
               <div class="photo__container">
                 <h3 class="photo-card__title">Дорога на север</h3>
                 <p class="photo-card__author">Автор фото: Петр</p>
@@ -141,12 +156,15 @@
           <li class="photo-list__item photo-card">
             <a class="photo__link" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg, img/photo-4-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg, img/photo-4-tablet@2x.jpg 2x">
-              <img alt="Мост дьявола" class="photo-card__image" src="../img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img alt="Мост дьявола" class="photo-card__image" width="280" height="280" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x">
             </picture>
             </a>
-            <div class="photo__fon">
+            <div class="photo__background">
               <div class="photo__container">
                 <h3 class="photo-card__title">Мост дьявола</h3>
                 <p class="photo-card__author">Автор фото: Антон</p>
@@ -163,12 +181,17 @@
         <h2 class="video__title">Все еще сомневаетесь?</h2>
         <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg, img/video-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg, img/video-tablet@2x.jpg 2x"><img alt="Видеопрезентацию" class="video__block" src="../img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x">
-          <svg height="54" viewbox="0 0 48 54" width="48" xmlns="http://www.w3.org/2000/svg">
-            <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7"></path>
-          </svg>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img alt="Видеопрезентацию" class="video__block"  width="280" height="177" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x">
         </picture>
+          <svg class="video__play" height="54" width="48" viewbox="0 0 48 54" xmlns="http://www.w3.org/2000/svg">
+          <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7"></path>
+          </svg>
+
       </section>
     </main>
     <footer class="footer">
