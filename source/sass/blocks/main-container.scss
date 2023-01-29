@@ -1,4 +1,5 @@
 .main-container__logo {
+  background-color: #81b3d2;
   background-image: url("../img/intro-triangle.svg"), url("../img/back-mobile.jpg");
   background-position: bottom, center;
   background-size: 100% auto;
@@ -7,6 +8,10 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/group2.svg"), url("../img/tablet.jpg");
     height: 518px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/group2@2x.svg"), url("../img/tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
