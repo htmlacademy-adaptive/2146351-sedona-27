@@ -1,5 +1,5 @@
 .page__body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   background-color: #ffffff;
   color: #000000;
   margin: 0;
@@ -63,11 +63,11 @@
   margin-left: 125px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 184px;
+    margin-left: 160px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 240px;
+    margin-left: 220px;
   }
 }
 
