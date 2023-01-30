@@ -61,12 +61,12 @@
   padding-top: 26px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
+    padding-top: 140px;
     width: 256px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 69px;
+    padding-top: 140px;
     width: 400px;
   }
 }
@@ -106,6 +106,8 @@
 
 .advantage__svg {
   @media (min-width: $tablet-width) {
+    width: 79px;
+    height: 72px;
     display: none;
   }
 }
@@ -161,6 +163,85 @@
   @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
+  }
+}
+
+.advantage__text-title--house {
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 26px;
+  }
+}
+
+.advantage__text-title--burger {
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 26px;
+  }
+}
+
+.advantage__text-title--gift {
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 26px;
+  }
+}
+
+
+.advantage__text-title--house::before {
+  @media (min-width: $tablet-width) {
+    display: block;
+    content: "";
+    width: 77px;
+    height: 72px;
+    position: absolute;
+    margin-left: 41px;
+    top: 1110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-image: url("../img/icons/icon-house.svg");
+  }
+}
+
+.advantage__text-title--burger::before {
+  @media (min-width: $tablet-width) {
+    display: block;
+    content: "";
+    width: 80px;
+    height: 68px;
+    position: absolute;
+    margin-left: 41px;
+    top: 1110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-image: url("../img/icons/icon-burger.svg");
+  }
+}
+
+.advantage__text-title--gift::before {
+  @media (min-width: $tablet-width) {
+    display: block;
+    content: "";
+    width: 66px;
+    height: 75px;
+    position: absolute;
+    margin-left: 50px;
+    top: 1110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-image: url("../img/icons/icon-gift.svg");
   }
 }
 
@@ -238,27 +319,24 @@
   padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
+    display: block;
   }
 }
 
 .advantage-item__icon-house {
   @media (min-width: $tablet-width) {
-    width: 77px;
-    height: 72px;
+    display: none;
   }
 }
 
 .advantage-item__icon-burger {
   @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 68px;
+    display: none;
   }
 }
 
 .advantage-item__icon-gift {
   @media (min-width: $tablet-width) {
-    width: 66px;
-    height: 75px;
+    display: none;
   }
 }

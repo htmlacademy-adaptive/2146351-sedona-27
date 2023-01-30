@@ -1,13 +1,21 @@
 .main-container__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #81b3d2;
   background-image: url("../img/intro-triangle.svg"), url("../img/back-mobile.jpg");
   background-position: bottom, center;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  width: 320px;
+  height: 214px;
+
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/group2.svg"), url("../img/tablet.jpg");
-    height: 518px;
+    width: 768px;
+    height: 290px;
+
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/group2@2x.svg"), url("../img/tablet@2x.jpg");
@@ -16,6 +24,22 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/group3.svg"), url("../img/desktop.jpg");
+    width: 1200px;
+    height: 357px;
+  }
+}
+
+.main-container__logo--hero {
+  width: 320px;
+  height: 389px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 518px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
   }
 }
 

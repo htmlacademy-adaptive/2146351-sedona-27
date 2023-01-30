@@ -9,10 +9,10 @@
   <link href="sass/style.scss" rel="stylesheet">
   <link href="favicon.ico" rel="icon">
   <link href="img/favicon/favicon.svg" rel="icon" type="image/svg+xml">
-  <link rel="placeholder" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
-  <link rel="placeholder" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
-  <link rel="placeholder" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
-  <link rel="placeholder" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -78,7 +78,7 @@
     <main class="main-container">
       <header class="main-container__header">
         <h1 class="visually-hidden">Седона — небольшой городок в Аризоне</h1>
-        <div class="main-container__logo">
+        <div class="main-container__logo main-container__logo--hero">
         <img alt="Добро пожаловать" class="main-container__img" src="img/text-index.svg">
         </div>
         <section class="index-text">
@@ -124,7 +124,7 @@
                   <svg class="advantage-item__icon-house" width="39" height="37">
                     <use xlink:href="img/sprite/sprite.svg#icon-house"></use>
                   </svg>
-                  <h2 class="block-title advantage__text-title">Жилье</h2>
+                  <h2 class="block-title advantage__text-title advantage__text-title--house">Жилье</h2>
                 </div>
                 <p class="block-text advantage__text-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
@@ -133,7 +133,7 @@
                   <svg class="advantage-item__icon-burger" height="35" width="40">
                     <use xlink:href="img/sprite/sprite.svg#icon-burger"></use>
                   </svg>
-                  <h2 class="block-title advantage__text-title">Еда</h2>
+                  <h2 class="block-title advantage__text-title  advantage__text-title--burger">Еда</h2>
                 </div>
                 <p class="block-text advantage__text-text">Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
               </li>
@@ -142,7 +142,7 @@
                   <svg class="advantage-item__icon-gift" height="38" width="32">
                     <use xlink:href="img/sprite/sprite.svg#icon-gift"></use>
                   </svg>
-                  <h2 class="block-title advantage__text-title">Сувениры</h2>
+                  <h2 class="block-title advantage__text-title advantage__text-title--gift">Сувениры</h2>
                 </div>
                 <p class="block-text advantage__text-text">Не только китайского, но и местного производства!</p>
               </li>
